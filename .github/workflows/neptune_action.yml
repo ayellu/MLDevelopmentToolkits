@@ -52,7 +52,7 @@ jobs:
          PR_BRANCH_EXPERIMENT_TAG_ID: ${{ steps.experiment_pr.outputs.experiment_tag_id }}
        id: compare
        run: |
-         pip install -r requirements.txt
+         echo $MAIN_BRANCH_EXPERIMENT_TAG_ID
          python -m neptunecontrib.create_experiment_comparison_comment \
            --api_token $NEPTUNE_API_TOKEN \
            --project_name $NEPTUNE_PROJECT_NAME \
