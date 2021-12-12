@@ -123,7 +123,7 @@ results = model.fit(
 #         callbacks=[NeptuneMonitor()])
 import os
 if os.getenv('CI') == "true":
-   neptune.append_tag('ci-pipeline', os.getenv('Experiment_1'))
+   neptune.append_tag('ci-pipeline', os.getenv('Experiment_2'))
 
 neptune.stop()
 
