@@ -30,7 +30,7 @@ jobs:
        run: |
          pip install -r requirements.txt
          export NEPTUNE_EXPERIMENT_TAG_ID=$(uuidgen)
-         python monitor_ml_runs_live.py
+         python NeptuneaiIntegrationWithKeras.py
          echo ::set-output name=experiment_tag_id::$NEPTUNE_EXPERIMENT_TAG_ID
 
      - name: Checkout main branch
@@ -43,7 +43,7 @@ jobs:
        run: |
          pip install -r requirements.txt
          export NEPTUNE_EXPERIMENT_TAG_ID=$(uuidgen)
-         python monitor_ml_runs_live.py
+         python NeptuneaiIntegrationWithKeras.py
          echo ::set-output name=experiment_tag_id::$NEPTUNE_EXPERIMENT_TAG_ID
 
      - name: Get Neptune experiments
