@@ -89,7 +89,7 @@ neptune.init(
     api_token="eyJhcGlfYWRkcmVzcyI6Imh0dHBzOi8vYXBwLm5lcHR1bmUuYWkiLCJhcGlfdXJsIjoiaHR0cHM6Ly9hcHAubmVwdHVuZS5haSIsImFwaV9rZXkiOiJkZDM0ZjcyYy05MjA0LTRmNmMtOGZhZC00MTkyNmQzNDgwYjcifQ==",
 )
 
-neptune.create_experiment(name='great-idea',params=PARAMS)
+neptune.create_experiment(name='FinalProjectExperiment',params=PARAMS)
 
 """This opens a new "experiment" namespace in Neptune to which you can log various objects.
 
