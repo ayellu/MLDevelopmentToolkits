@@ -29,7 +29,7 @@ jobs:
        id: experiment_pr
        run: |
          pip install -r requirements.txt
-         export NEPTUNE_EXPERIMENT_TAG_ID=$(uuidgen)
+         export NEPTUNE_EXPERIMENT_TAG_ID=Experiment_2
          python monitor_ml_runs_live.py
          echo ::set-output name=experiment_tag_id::$NEPTUNE_EXPERIMENT_TAG_ID
 
@@ -42,8 +42,8 @@ jobs:
        id: experiment_main
        run: |
          pip install -r requirements.txt
-         export NEPTUNE_EXPERIMENT_TAG_ID=$(uuidgen)
-         python train.py
+         export NEPTUNE_EXPERIMENT_TAG_ID=Experiment_1
+         python monitor_ml_runs_live.py
          echo ::set-output name=experiment_tag_id::$NEPTUNE_EXPERIMENT_TAG_ID
 
      - name: Get Neptune experiments
