@@ -122,5 +122,9 @@ results = model.fit(
 #         batch_size=PARAMS['batch_size'],
 #         callbacks=[NeptuneMonitor()])
 
+if os.getenv('CI') == "true":
+   neptune.append_tag('ci-pipeline', os.getenv('NEPTUNE_EXPERIMENT_TAG_ID'))
+
+
 neptune.stop()
 
