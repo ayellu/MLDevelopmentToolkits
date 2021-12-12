@@ -16,8 +16,8 @@ from tensorflow.keras.utils  import to_categorical
 from keras import models
 from keras import layers
 
-PARAMS = {'epoch_nr': 10,
-          'batch_size': 256,
+PARAMS = {'epoch_nr': 20,
+          'batch_size': 512,
           'lr': 0.005,
           'momentum': 0.4,
           'use_nesterov': True,
