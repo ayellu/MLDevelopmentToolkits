@@ -2,3 +2,4 @@ numpy
 tensorflow
 neptune-client
 neptune-contrib
+fastai neptune-client[fastai]
