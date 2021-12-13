@@ -17,7 +17,7 @@ from keras import models
 from keras import layers
 
 PARAMS = {'epoch_nr': 100,
-          'batch_size': 256,
+          'batch_size': 1000,
           'lr': 0.005,
           'momentum': 0.4,
           'use_nesterov': True,
